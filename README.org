@@ -1,0 +1,20 @@
+#+TITLE: ~doom-modeline-pokemon~
+A package that puts animated Pokémon icons on your ~doom-modeline~.
+
+[[file:screenshot.png]]
+* Installation
+An example of installation via ~quelpa-use-package~ ：
+
+#+BEGIN_SRC emacs-lisp
+  (use-package doom-modeline-pokemon
+    :when (display-graphic-p)
+    :after doom-modeline
+    :quelpa (doom-modeline-pokemon :fetcher github :repo "bohonghuang/doom-modeline-pokemon" :files ("*.el" "icons"))
+    :demand t
+    :config
+    (doom-modeline-pokemon-mode +1))
+#+END_SRC
+* Disclaimer
+The repository maintainer doesn't have the Pokémon trademark's copyright and these icons.
+The icons distributed with this package are collected from the Pokémon fangame forum for non-commercial usage only.
+All rights are reserved to The Pokémon Company and the icon designers.
